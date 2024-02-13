@@ -9,6 +9,27 @@ export default function Home() {
       <p>Totam odit eligendi quis quasi fuga, minus consectetur, reprehenderit rem nemo dignissimos earum voluptatum quas hic accusantium ipsam illum velit porro molestias fugit cupiditate error cum id? Autem, unde deleniti.</p>
       <p>Harum, minima labore nostrum natus numquam iure molestiae, quas ipsum quidem quos adipisci facere odit amet voluptatibus obcaecati similique. Qui veritatis, ipsam voluptates odio ex et consequatur facere quae eveniet!</p>
       <p>Molestias, in. Quod explicabo at quaerat ut iusto laborum unde dolorem aut vel aperiam atque vero molestias provident quam, ducimus perspiciatis, cupiditate esse veritatis enim corrupti consectetur! Dolor, accusantium a.</p>
+
+      <blockquote>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, et qui laboriosam nemo velit omnis vitae minus saepe porro dignissimos.</p>
+      </blockquote>
+
+      <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Vitae ut cumque architecto veniam.</li>
+        <li>Alias nisi sit soluta error!</li>
+        <li>Cumque ea modi nemo ipsam.</li>
+        <li>Natus aperiam ex praesentium ipsam!</li>
+      </ul>
+
+      <ol>
+        <li>Lorem, ipsum.</li>
+        <li>Veniam, quia.</li>
+        <li>Ab, assumenda.</li>
+        <li>Sint, quam.</li>
+        <li>Quibusdam, sapiente.</li>
+        <li>Sit, facere!</li>
+      </ol>
     </>
   );
 }
