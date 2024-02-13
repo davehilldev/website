@@ -1,6 +1,8 @@
 import './reset.css';
 import './styles.css';
 import { site } from '@/lib/config';
+import Link from 'next/link';
+import Nav from '@/components/Nav';
 
 export const metadata = {
   title: `${site.title} - ${site.tagline}`,
@@ -19,11 +21,7 @@ export default function RootLayout({ children }) {
             <span className="site-logo__tagline">{site.tagline}</span>
           </a>
           <nav>
-            <ul className="site-nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
+            <Nav />
           </nav>
         </header>
         <main>

@@ -117,6 +117,18 @@ ul {
     list-style: none;
 }
 
+.site-nav li {
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.site-nav li:hover,
+.site-nav > .active {
+    background-color: var(--clr-accent);
+    color: var(--clr-background);
+
+}
+
 @media (min-width: 600px) {
     .site-header {
         align-items: center;
