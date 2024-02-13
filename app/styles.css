@@ -1,8 +1,21 @@
 
 html {
+    --clr-background: hsl(0, 0%, 95%);
+    --clr-text: hsl(80, 100%, 1%);
+    --clr-accent: hsl(194, 100%, 14%);
+    background-color: var(--clr-background);
+    color: var(--clr-text);
     font-family: system-ui, sans-serif;
     font-size: clamp(14px, 2vw, 18px);
     line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --clr-background: hsl(80, 100%, 1%);
+        --clr-text: hsl(0, 0%, 95%);
+        --clr-accent: hsl(194, 100%, 69%);
+    }
 }
 
 body {
@@ -41,14 +54,37 @@ h4 {
 }
 
 p {
+    margin-block: 0.75rem;
     max-width: 75ch;
 }
 
 .site-header {
+    align-items: center;
     display: grid;
     gap: 1rem;
     place-content: center;
     padding: 1rem;
+    
+}
+
+.site-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.site-logo__name {
+    color: var(--clr-accent);
+    font-size: 2.24rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.site-logo__tagline {
+    color: red;
+    font-size: 1.032rem;
+    line-height: 1.1;
+    margin-block-start: -0.26rem;
 }
 
 .site-nav {
@@ -63,6 +99,12 @@ p {
     .site-header {
         grid-template-columns: 1fr auto;
     }
+}
+
+.wrapper {
+    margin-block: 1.75rem;
+    margin-inline: auto;
+    width: min(100% - 2rem, 70rem);
 }
 
 .site-footer {
