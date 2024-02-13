@@ -7,9 +7,29 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const Year = new Date().getFullYear();
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header className="site-header">
+          <a href="" className="site-logo">Website</a>
+          <nav>
+            <ul className="site-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div className="wrapper">
+            {children}
+          </div>
+        </main>
+        <footer className="site-footer">
+          <p>Copyright &copy; {Year}</p>
+        </footer>
+      </body>
     </html>
   );
 }
