@@ -1,7 +1,6 @@
 import './reset.css';
 import './styles.css';
 import { site } from '@/lib/config';
-import Link from 'next/link';
 import Nav from '@/components/Nav';
 
 export const metadata = {
@@ -15,8 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <a href="#main" className="skip-to-link">Skip to main content</a>
         <header className="site-header">
-          <a href="" className="site-logo">
+          <a href="/" className="site-logo">
             <span className="site-logo__name">{site.title}</span>
             <span className="site-logo__tagline">{site.tagline}</span>
           </a>
