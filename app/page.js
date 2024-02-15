@@ -12,13 +12,14 @@ export default function Home() {
    </div>
    <section className="insights">
    {posts.map((post) => (
-        <div key={post.slug} className="insight">
-          <Link href={`/posts/${post.slug}`}>
+        <div key={post.id} className="insight">
+          <Link href={`/insights/insight/${post.id}`}>
           
-              <h2>{post.title}</h2>
+              <h2>{post.shortTitle}</h2>
+              </Link>
               <p>{post.excerpt}</p>
             
-          </Link>
+          
         </div>
       ))}
       </section>

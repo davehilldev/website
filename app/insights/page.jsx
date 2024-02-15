@@ -12,10 +12,10 @@ export default function Home() {
       <section className="insights">
       {!allPostsData.length && <p>No articles found</p>}
 
-        {allPostsData.map(({ id, title, excerpt, image, imageAlt }) => (
+        {allPostsData.map(({ id, title, shortTitle, excerpt, image, imageAlt }) => (
           <article key={id} className="insight">
             <Link href={`/insights/insight/${id}`}>
-              <h2>{title}</h2>
+              <h2>{shortTitle}</h2>
             </Link>
             <div className="insight__content">
             { image && (
