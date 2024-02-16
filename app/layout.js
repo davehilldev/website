@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
         </main>
         <footer className="site-footer">
           <p>Copyright &copy; {Year} {site.owner}</p>
+          <p>Visit: <a href="https://www.narrativeodyssey.digital" target="_blank" rel="noopener">Narrative Odyssey</a></p>
         </footer>
       </body>
     </html>

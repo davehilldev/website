@@ -157,7 +157,7 @@ ul {
 
     }
 
-    .site-navili {
+    .site-nav li {
         text-align: initial;
     }
 }
@@ -168,8 +168,10 @@ ul {
     width: min(100% - 2rem, 80ch);
 }
 
-.wrapper a {
-    color: var(--clr-accent);
+.wrapper p a,
+.site-footer p a {
+    color: blue;
+    text-decoration: dotted underline;
 }
 
 .wrapper a:hover {
@@ -177,8 +179,23 @@ ul {
 }
 
 .site-footer {
+    
+    display: grid;
+    place-content: center;
     font-size: 0.95rem;
     padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.site-footer p {
+    margin-block: 0;
+}
+
+@media (min-width: 600px) {
+    .site-footer {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
@@ -356,4 +373,52 @@ strong {
     padding: 0.5rem;
     text-align: center;
     width: fit-content;
+}
+
+.card-set {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-block: 1.75rem;
+}
+
+.card {
+    color: var(--clr-accent);
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.25rem var(--clr-accent);
+    display: grid;
+    padding: 1rem;
+    position: relative;
+}
+
+.card__icon {
+    --svg-size: 3rem;
+    border: 4px solid var(--clr-accent);
+    border-radius: 50%;;
+    margin-block: 1rem;
+    padding: calc( 0.185 * var(--svg-size));
+    place-self: center;
+    width: fit-content;
+}
+
+@media (min-width: 768px) {
+    .card__icon {
+        --svg-size: 4rem;
+    }
+}
+
+.card__icon svg {
+    fill: currentColor;
+    height: var(--svg-size);
+    width: var(--svg-size);
+}
+
+.card h2 {
+    color: var(--clr-accent);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card p {
+    display: none;
 }
