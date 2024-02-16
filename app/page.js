@@ -12,6 +12,7 @@ export default function Home() {
     <p>Image by <a href="https://pixabay.com/users/12019-12019/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1758197" target="_blank" rel="noopener">12019</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1758197" target="_blank" rel="noopener">Pixabay</a></p>
    </div>
    <section className="insights">
+      <h2>Latest Insight</h2>
    {posts.map((post) => (
         <div key={post.id} className="insight">
           <Link href={`/insights/insight/${post.id}`} aria-label="Read more about Dave">
